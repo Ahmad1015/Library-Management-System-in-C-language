@@ -67,7 +67,7 @@ void AddBook()
     printf("\n\t\t\t\t\t\t***********************************\t\t\t\t\t\t");
     printf("\n\t\t\t\t\t\t* Welcome To The ADD Book Section *\t\t\t\t\t\t\n");
     printf("\t\t\t\t\t\t***********************************\t\t\t\t\t\t\n\n");
-    fp=fopen("C:/Users/Ahmad/OneDrive - 0s4l8/Documents/New folder/Reducing Code Lines/Library.txt","w");
+    fp=fopen("Library.txt","w");
     if (fp==NULL)
     {
         printf("File not found");
@@ -94,7 +94,7 @@ void displayBook()
      printf("\n\t\t\t\t\t\t***************************************\t\t\t\t\t\t");
     printf("\n\t\t\t\t\t\t* Welcome To The Display Book Section *\t\t\t\t\t\t\n");
     printf("\t\t\t\t\t\t***************************************\t\t\t\t\t\t\n\n");
-    fp=fopen("C:/Users/Ahmad/OneDrive - 0s4l8/Documents/New folder/Reducing Code Lines/Library.txt","r");
+    fp=fopen("Library.txt","r");
     if (fp==NULL)
     {
         printf("File not found");
@@ -120,7 +120,7 @@ void searchBook()
     printf("\n\t\t\t\t\t\t***************************************\t\t\t\t\t\t");
     printf("\n\t\t\t\t\t\t* Welcome To The Search Book Section *\t\t\t\t\t\t\n");
     printf("\t\t\t\t\t\t***************************************\t\t\t\t\t\t\n\n");
-    fp=fopen("C:/Users/Ahmad/OneDrive - 0s4l8/Documents/New folder/Reducing Code Lines/Library.txt","r");
+    fp=fopen("Library.txt","r");
     if (fp==NULL)
     {
         printf("File not found");
@@ -188,7 +188,7 @@ void deleteBook()
     printf("\n\t\t\t\t\t\t***************************************\t\t\t\t\t\t");
     printf("\n\t\t\t\t\t\t* Welcome To The Delete Book Section *\t\t\t\t\t\t\n");
     printf("\t\t\t\t\t\t***************************************\t\t\t\t\t\t\n\n");
-    fp=fopen("C:/Users/Ahmad/OneDrive - 0s4l8/Documents/New folder/Reducing Code Lines/Library.txt","r");
+    fp=fopen("Library.txt","r");
     if (fp==NULL)
     {
         printf("File not found");
@@ -198,7 +198,7 @@ void deleteBook()
         fscanf(fp,"%s\t%s\t%s\t%s\t%s\t%s",b[i].ISBN,b[i].serial,b[i].Book_title,b[i].Edition,b[i].Author,b[i].is_Reserved);
     }
     fclose(fp);
-    fptr=fopen("C:/Users/Ahmad/OneDrive - 0s4l8/Documents/New folder/Reducing Code Lines/Library.txt","w");
+    fptr=fopen("Library.txt","w");
     if (fptr == NULL)
     {
         printf("File not found");
@@ -232,7 +232,7 @@ void updateBook()
     printf("\n\t\t\t\t\t\t***************************************\t\t\t\t\t\t");
     printf("\n\t\t\t\t\t\t* Welcome To The Update Book Section *\t\t\t\t\t\t\n");
     printf("\t\t\t\t\t\t***************************************\t\t\t\t\t\t\n\n");
-   fp=fopen("C:/Users/Ahmad/OneDrive - 0s4l8/Documents/New folder/Reducing Code Lines/Library.txt","r");
+   fp=fopen("Library.txt","r");
     if (fp==NULL)
     {
         printf("File not found");
@@ -261,7 +261,7 @@ void updateBook()
             flag=1;
         }
     }
-    FILE *fptr=fopen("C:/Users/Ahmad/OneDrive - 0s4l8/Documents/New folder/Reducing Code Lines/Library.txt","w");
+    FILE *fptr=fopen("Library.txt","w");
     if (fptr == NULL)
     {
         printf("File not found");
@@ -284,7 +284,7 @@ void issueBook()
     printf("\n\t\t\t\t\t\t* Welcome To The Issue Book Section *\t\t\t\t\t\t\n");
     printf("\t\t\t\t\t\t***************************************\t\t\t\t\t\t\n\n");
     struct library b[5];
-    fp=fopen("C:/Users/Ahmad/OneDrive - 0s4l8/Documents/New folder/Reducing Code Lines/Library.txt","r");
+    fp=fopen("Library.txt","r");
     if (fp==NULL)
     {
         printf("File not found");
@@ -294,7 +294,7 @@ void issueBook()
         fscanf(fp,"%s\t%s\t%s\t%s\t%s\t%s\n",b[i].ISBN,b[i].serial,b[i].Book_title,b[i].Edition,b[i].Author,b[i].is_Reserved);
     }
     fclose(fp);
-    fp=fopen("C:/Users/Ahmad/OneDrive - 0s4l8/Documents/New folder/Reducing Code Lines/Library.txt","w");
+    fp=fopen("Library.txt","w");
     if (fp == NULL)
     {
         printf("File not found");
